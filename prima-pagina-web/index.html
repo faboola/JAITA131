@@ -4,57 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mia prima pagina web</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+    <article>
+
     
     <h1>I 5 Videogiochi Più Influenti di Sempre</h1>
 
-    <p>Il mondo dei videogiochi ha subito trasformazioni radicali nel corso dei decenni, grazie a titoli che non solo hanno segnato la storia, ma hanno cambiato il modo in cui i giochi vengono sviluppati e percepiti. Questi giochi sono riusciti a creare interi generi, innovare meccaniche di gameplay e diventare punti di riferimento per milioni di giocatori. Ecco una classifica dei 5 videogiochi più influenti di sempre, con un'analisi del loro impatto.</p>
+    <p class="intro">Il mondo dei videogiochi ha subito trasformazioni radicali nel corso dei decenni, grazie a titoli che non solo hanno segnato la storia, ma hanno cambiato il modo in cui i giochi vengono sviluppati e percepiti. Questi giochi sono riusciti a creare interi generi, innovare meccaniche di gameplay e diventare punti di riferimento per milioni di giocatori. Ecco una classifica dei 5 videogiochi più influenti di sempre, con un'analisi del loro impatto.</p>
+
+        <!-- shortcut per EMMET: ol>(li>a)*5 -->
+
+        <ol class="table-of-contents">
+            <li><a href="#super-mario">Super Mario Bros</a></li>
+            <li><a href="#zelda">Legend of Zelda</a></li>
+            <li><a href="#doom">Doom</a></li>
+            <li><a href="#gta">GTA 3</a></li>
+            <li><a href="#minecraft">Minecraft</a></li>
+        </ol>
     
-    <h2>1. Super Mario Bros. (1985)</h2>
-    <div><strong>Anno di uscita:</strong> 1985</div>
-    <div><strong>Piattaforma:</strong> Nintendo Entertainment System (NES)</div>
+    <div class="title-wrapper">
+        <h2 id="super-mario">1. Super Mario Bros. (1985)</h2>
+        <div class="anno"><strong>Anno di uscita:</strong> 1985</div>
+        <div class="piattaforma"><strong>Piattaforma:</strong> Nintendo Entertainment System (NES)</div>
+    </div>
     
     <p>Super Mario Bros., sviluppato da Nintendo e diretto dal leggendario <a href="https://it.wikipedia.org/wiki/Shigeru_Miyamoto">Shigeru Miyamoto</a>, è probabilmente il videogioco più iconico di tutti i tempi. È stato il titolo che ha contribuito a salvare l'industria dei videogiochi dopo la crisi del 1983, introducendo un nuovo standard per i platform 2D.</p>
 
     <p>Caratteristiche: In Super Mario Bros., i giocatori controllano Mario, un idraulico che deve attraversare otto mondi per salvare la Principessa Peach dal malvagio Bowser. Il design dei livelli, la fluidità dei controlli e la precisione delle meccaniche di gioco hanno fissato un nuovo livello di eccellenza nel gaming.</p>
     <img src="./images/supermario.jpg" alt="Super Mario">
    
-    <img src="" alt="">
-
-
 
     <p>Impatto: Oltre a ridefinire il genere platform, Super Mario Bros. ha gettato le basi per lo sviluppo di franchise di lunga durata. Ha anche dimostrato come un'accurata combinazione di gameplay intuitivo e narrazione semplice potesse catturare l'immaginazione di una vasta platea di giocatori, aprendo la strada alla cultura popolare dei videogiochi.</p>
     
-    <h2>2. The Legend of Zelda: Ocarina of Time (1998)</h2>
-    <div><strong>Anno di uscita:</strong> 1998</div>
-    <div><strong>Piattaforma:</strong> Nintendo 64</div>
+    <div class="title-wrapper">
+        <h2 id="zelda">2. The Legend of Zelda: Ocarina of Time (1998)</h2>
+        <div class="anno"><strong>Anno di uscita:</strong> 1998</div>
+        <div class="piattaforma"><strong>Piattaforma:</strong> Nintendo 64</div>
+    </div>
 
     <p>Ocarina of Time è considerato uno dei migliori videogiochi di tutti i tempi. È stato il primo titolo della serie Zelda a introdurre un mondo 3D completamente esplorabile, e ha stabilito nuove regole per i giochi d'avventura e d'azione.</p>
     <p>Caratteristiche: Ocarina of Time ha portato il concetto di narrazione interattiva a un nuovo livello. I giocatori controllano Link, che viaggia nel tempo per salvare il regno di Hyrule dal malvagio Ganondorf. L'introduzione del sistema di targeting Z-lock ha rivoluzionato i combattimenti in 3D, rendendo il gameplay più preciso e coinvolgente.</p>
     <p>Impatto: Il sistema di controllo e il design open-world di Ocarina of Time hanno influenzato intere generazioni di sviluppatori. L'uso della musica come meccanica di gioco, tramite l'ocarina, ha dimostrato come gli elementi artistici potessero essere integrati in modo armonioso nel gameplay. Il gioco ha ispirato la creazione di mondi aperti più vasti e complessi, un concetto oggi centrale nei giochi moderni.</p>
     
-    <h2>3. Doom (1993)</h2>
-    <div><strong>Anno di uscita:</strong> 1993</div>
-    <div><strong>Piattaforma</strong>: PC</div>
+    <div class="title-wrapper">
+        <h2 id="doom">3. Doom (1993)</h2>
+        <div class="anno"><strong>Anno di uscita:</strong> 1993</div>
+        <div class="piattaforma"><strong>Piattaforma</strong>: PC</div>
+    </div>
+
     <p>Doom ha ridefinito il genere degli sparatutto in prima persona (FPS) e ha contribuito alla nascita della cultura dei giochi multiplayer. Sviluppato da id Software, Doom ha mostrato le potenzialità del PC come piattaforma di gaming e ha gettato le basi per molti degli FPS che conosciamo oggi.</p>
     <p>Caratteristiche: Doom metteva i giocatori nei panni di un marine spaziale che combatteva contro orde di demoni in ambienti tridimensionali. Il gameplay frenetico, le armi potenti e il livello di difficoltà crescente lo resero immediatamente popolare. Il gioco introdusse anche il concetto di modding, permettendo ai giocatori di creare i propri livelli.</p>
     <p>Impatto: Doom ha avuto un'influenza enorme non solo per il genere FPS, ma anche per la nascita dei giochi multiplayer online. Inoltre, è stato uno dei primi giochi a mostrare il potenziale del gaming competitivo, dando vita a una scena di tornei che continua ancora oggi.</p>
     
-    <h2>4. Grand Theft Auto III (2001)</h2>
-    <div>Anno di uscita: 2001</div>
-    <div>Piattaforma: PlayStation 2</div>
+    <div class="title-wrapper">
+        <h2 id="gta">4. Grand Theft Auto III (2001)</h2>
+        <div class="anno">Anno di uscita: 2001</div>
+        <div class="piattaforma">Piattaforma: PlayStation 2</div>
+    </div>
 
     <p>Grand Theft Auto III ha cambiato per sempre il modo in cui i giochi open-world vengono concepiti, offrendo ai giocatori una libertà senza precedenti in un mondo tridimensionale completamente interattivo. Sviluppato da Rockstar Games, GTA III ha aperto una nuova era per i giochi sandbox.</p>
     <p>Caratteristiche: In GTA III, i giocatori esplorano Liberty City, un'enorme città piena di missioni, veicoli e personaggi. La libertà di movimento, unita a una trama coinvolgente e una colonna sonora dinamica, ha reso questo gioco una pietra miliare. GTA III è stato uno dei primi titoli a combinare con successo azione, guida e narrazione in un unico pacchetto coeso.</p>
     <p>Impatto: Il gioco ha definito il genere open-world, ispirando numerosi titoli successivi come Assassin's Creed, Watch Dogs e Red Dead Redemption. La sua enfasi sulla libertà di scelta e sull'esplorazione ha contribuito a ridefinire le aspettative dei giocatori rispetto a ciò che un videogioco poteva offrire.</p>
     
-    <h2>5. Minecraft (2011)</h2>
+    <img src="./images/gta3.jpg" alt="screenshot gta 3">
 
-    <div>
-        <strong>Anno di uscita:</strong> 2011</div>
-    <div><strong>Piattaforma:</strong> PC, Xbox, PlayStation, Mobile</div>
+    <div class="title-wrapper">
+        <h2 id="minecraft">5. Minecraft (2011)</h2>
+        <div class="anno"><strong>Anno di uscita:</strong> 2011</div>
+        <div class="piattaforma"><strong>Piattaforma:</strong> PC, Xbox, PlayStation, Mobile</div>
+    </div>
+    
     <p>Minecraft, sviluppato inizialmente da Markus Persson, ha portato una rivoluzione nel mondo dei giochi di costruzione e creatività. Questo gioco sandbox ha permesso ai giocatori di creare mondi completamente personalizzati utilizzando blocchi pixelati, promuovendo un’esperienza di gioco aperta e senza confini.</p>
     <p>Caratteristiche: In Minecraft, i giocatori esplorano mondi generati proceduralmente, raccolgono risorse e costruiscono strutture complesse. La sua modalità di gioco è estremamente flessibile, consentendo esperienze creative, di sopravvivenza e cooperative. Il design minimalista e l’approccio open-ended hanno catturato l'immaginazione di milioni di persone.</p>
     <p>Impatto: Minecraft ha influenzato un’intera generazione di giochi creativi e ha aperto la strada a nuove forme di collaborazione tra i giocatori. Ha anche rivoluzionato la didattica, entrando nelle scuole come strumento educativo. La sua capacità di stimolare la creatività e la cooperazione online ha contribuito a ridefinire i confini tra videogiochi e strumenti creativi.</p>
@@ -62,6 +84,7 @@
     <p>Questi cinque titoli hanno segnato tappe fondamentali nell'evoluzione del gaming, trasformando non solo il modo in cui i giochi vengono sviluppati, ma anche il modo in cui i giocatori vivono l’esperienza di gioco. Ogni titolo ha aperto nuove strade e ha lasciato un segno indelebile nella cultura popolare.</p>
 
     
+    </article>
 
 </body>
 </html>

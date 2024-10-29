@@ -1,0 +1,81 @@
+body {
+    background-color: #131313; /* colore di sfondo */
+    color: #efefef; /*colore del testo */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url('../images/pattern.png');
+
+    /* formula per sfondo fisso su body */
+    /* background-image: url('../images/pixels.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+    /*se uso un'immagine ripetuta, basta mettere background-image e tutto si adatta */
+} 
+
+article {
+    width: 1000px; /*definire la larghezza dell'elemento */
+    /*imposto i margini automatici per centrare l'elemento */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto; /*sopra e sotto: 0 | sx e dx: auto */
+    /* per impostare 4 margini in una sola riga:*/
+    /* margin: 10px 20px 30px 50px;  */
+    /* top | right | bottom | left */
+    /* con 3 valori: TOP | LEFT + RIGHT | BOTTOM */
+
+    /*con 1 valore solo imposto tutti i lati */
+    /* margin: 20px; */
+
+    background:rgba(0,0,0,0.7);
+    /*rgba: 3 valori R,G,B e un valore di alpha channel (trasparenza) da 0 a 1 */
+    padding:16px;
+}
+
+h1 {
+    font-size: 48px; /*dimensione carattere*/
+}
+
+h2 {
+    /*spazio sopra h2 quando scrolla dopo aver cliccato sull'ancora*/
+    scroll-margin-top: 16px;
+} 
+
+a {
+    color: fuchsia;
+}
+
+.intro {
+    /* selettore tipo classe */
+    font-size: 20px;
+}
+
+.table-of-contents a { /*tutti gli <a> dentro gli elementi con classe .table-of-conents*/
+    font-weight: bold; /*grassetto*/
+}
+
+.anno, .piattaforma { /*seleziono DUE classi contemporaneamente*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.anno strong, .piattaforma strong {
+    background-color: #444444;
+   
+}
+
+.title-wrapper {
+   border-left: 8px solid gold; /*bordo: dimensione | stile | colore */
+   padding-left: 16px;
+   /* stessa sintassi del margine:
+   1 valore = 4 lati uguali
+   2 valori = top+bottom | left+right
+   3 valori = top | left+right | bottom
+   4 valori = top | right | bottom | left 
+   ad es. padding: 0 20px 5px 3px;
+   */
+
+}
+
+
