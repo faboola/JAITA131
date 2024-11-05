@@ -1,20 +1,65 @@
+body {
+    margin: 0;
+}
+
 .container {
     width: 80%;
     background:#cccccc;
+    /*dimensione: 80% dimensione rispetto al body */
 }
 
 .box {
     background-color: blue;
     color: white;
     width: 50%;
+
+    /*50% rispetto al genitore */
 }
 
 .box-2 {
     background-color: fuchsia;
     width: 25%;
+
+    /*25% rispetto al genitore (container)*/
 }
 
 .inner-box {
     background-color: lime;
     width:70%;
+    /* questo elemento è dentro .box, quindi sarà il 70% di .box */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MISURE IN REM                               */
+/* -------------------------------------------------------------------------- */
+.text-wrapper {
+    padding: 3rem;
+}
+
+.text-wrapper h2 {
+    font-size: 3rem; /*1rem = dimensione del testo di default sul browser */
+    /*NOTA: su desktop il carattere di default per il testo è di 16px */
+}
+
+.text-wrapper p {
+    margin-bottom: 2rem; /*il margine inferiore è il doppio della dimensione del font, cioè 2rem */
+} 
+
+/* -------------------------------------------------------------------------- */
+/*                              MISURA IN VH / VW                             */
+/* -------------------------------------------------------------------------- */
+
+.banner {
+    background-color:darkseagreen;
+    height:100vh; /*100vh = alto come tutto il viewport */
+    /*per impostare la larghezza rispetto al viewport: */
+    /*width:50vw;*/
+
+    /*SFONDO INTERO FULL SCREEN */
+
+    background-image: url('miao.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
 }
