@@ -4,6 +4,7 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     background-image: url('../images/pattern.png');
+    
 
     /* formula per sfondo fisso su body */
     /* background-image: url('../images/pixels.jpg');
@@ -14,7 +15,9 @@ body {
     /*se uso un'immagine ripetuta, basta mettere background-image e tutto si adatta */
 } 
 
+
 article {
+    background: rgb(0,0,0,0.5);
     width: 1000px; /*definire la larghezza dell'elemento */
     /*imposto i margini automatici per centrare l'elemento */
     /* margin-left: auto;
@@ -28,7 +31,7 @@ article {
     /*con 1 valore solo imposto tutti i lati */
     /* margin: 20px; */
 
-    background:rgba(0,0,0,0.7);
+    /* background:rgba(0,0,0,0.7); */
     /*rgba: 3 valori R,G,B e un valore di alpha channel (trasparenza) da 0 a 1 */
     padding:16px;
 }

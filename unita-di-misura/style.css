@@ -1,0 +1,20 @@
+.container {
+    width: 80%;
+    background:#cccccc;
+}
+
+.box {
+    background-color: blue;
+    color: white;
+    width: 50%;
+}
+
+.box-2 {
+    background-color: fuchsia;
+    width: 25%;
+}
+
+.inner-box {
+    background-color: lime;
+    width:70%;
+}
