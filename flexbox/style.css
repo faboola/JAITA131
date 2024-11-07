@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.box {
+    border:1px solid #FF9900;
+    font-size: 3rem;
+}
+
+.container {
+
+    background-color: lightblue;
+    height:400px;
+    display: flex; /*affianca gli elementi */
+
+    /* -------------------------------------------------------------------------- */
+    /*           per disporre gli elementi sul main-axis (orizzontale):           */
+    /* -------------------------------------------------------------------------- */
+
+    /* justify-content: flex-start; */ /*proprietà di default */
+    /* justify-content: center;
+    justify-content: flex-end; */
+
+    /*distribuisce lo spazio in modo uniforme */
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+
+    justify-content: space-between; /*disponi uniformemente partendo dagli estremi*/
+
+    /* -------------------------------------------------------------------------- */
+    /*            Per disporre gli elementi sul cross-axis (verticale)            */
+    /* -------------------------------------------------------------------------- */
+
+    align-items: stretch; /*proprietà di default: "stira" gli elementi fino al fondo del genitore */
+
+    align-items: start; /*disponi all'inizio del cross-axis */
+    align-items: end; /*disponi all'inizio del cross-axis */
+
+    align-items: center; /*al centro */
+
+    /* -------------------------------------------------------------------------- */
+    /*                      PER INVERTIRE GLI ASSI DI FLEXBOX                     */
+    /* -------------------------------------------------------------------------- */
+
+    /* flex-direction:column; */
+    /* il valore di default è flex-direction: row */
+   
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             GALLERY CON FLEXBOX                            */
+/* -------------------------------------------------------------------------- */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /*vai a capo quando finisci lo spazio */
+}
+
+.gallery-item {
+    width: 25%;
+    padding:1rem;
+}
+
+.gallery-item img {
+    max-width: 100%;
+}
