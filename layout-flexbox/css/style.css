@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 82%;
+    margin:0 auto; /*centrato rispetto al genitore */
+}
+
+header {
+   
+    background-color: aqua;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between; /*distribuisce i due elementi figli agli opposti */
+}
+

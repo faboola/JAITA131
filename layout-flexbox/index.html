@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Esempio Flexbox</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- HEADER è l'insestazione di una pagina web o di un articolo. Qui contiene le
+        informazioni base sull'identità dell'azienda, e il menu -->
+
+        <header>
+
+
+            <div class="container">
+
+                <!-- a questo elemento daremo display:flex per affiancare logo e menu -->
+                <div class="header-wrapper">
+
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <!-- Il tag NAV nasce per contenere gli elementi di navigazione principale
+                    (menu) -->
+                    <nav class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="">PRICING</a>
+                            </li>
+                            <li>
+                                <a href="">DEMO</a>
+                            </li>
+                            <li>
+                                <a href="">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> <!-- chiude header-wrapper-->
+            </div> <!-- chiude container -->
+        </header>
+
+        <main>
+
+            <section id="hero">
+
+                <div class="hero-text">
+
+                    <h1>Hey you!</h1>
+                    <p>What are you looking at?</p>
+                </div>
+
+            </section>
+
+            <section id="info">
+
+                <div class="section-title">
+                    <h2>More about our services</h2>
+                </div>
+
+                <!-- START INFO BOX -->
+                <div class="info-box">
+                    <div class="info-image">
+                        <img src="https://picsum.photos/600/400?random=1" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
+                            minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
+                            cumque rem dicta? Doloremque, dolorem.</p>
+                    </div>
+                </div>
+                <!-- END INFO BOX -->
+
+                <!-- START INFO BOX -->
+                <div class="info-box">
+                    <div class="info-image">
+                        <img src="https://picsum.photos/600/400?random=2" alt="">
+                    </div>
+                    <div class="info-text">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
+                            minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
+                            cumque rem dicta? Doloremque, dolorem.</p>
+                    </div>
+                </div>
+                <!-- END INFO BOX -->
+
+            </section>
+
+            <!-- FOOTER definisce il pié di pagina. Può essere generale per il sito, oppure
+            relativo a un singolo articolo. Posso quindi avere più footer all'interno della
+            stessa pagina. -->
+
+        </main>
+
+        <footer id="main-footer">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-info">Nome Azienda..</div>
+                <div class="footer-links">Social...</div>
+                <div class="footer-legal">Privacy, Cookies...</div>
+
+            </div>
+
+        </footer>
+
+    </body>
+</html>
