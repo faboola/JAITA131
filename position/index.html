@@ -9,6 +9,10 @@
 
     <style>
 
+        * {
+            box-sizing: border-box;
+        }
+
         /* position:fixed serve a fissare un elemento rispetto al viewport. */
         
         .fixed {
@@ -21,6 +25,15 @@
 
             bottom:3rem; /*conta 3rem dal fondo del viewport */
             left:10rem; /*conta 10rem dal lato sinistro del viewport */
+
+            z-index:1;
+            /* Z-INDEX serve per riordinare le sovrapposizioni */
+            /*
+            
+            z-index: 0: default (livello base)
+            z-index: 1 livello superiore
+            z-index .... 99+ altri livelli */
+            
         }
 
         .relative {
@@ -83,6 +96,11 @@
     <style>
         .gallery-image {
             position: relative; /*diventa il punto di riferimento per il figlio che ha position:absolute */
+            width:600px;
+        }
+
+        .gallery-image img {
+            width: 100%;
         }
 
         .gallery-info {
@@ -92,6 +110,7 @@
             background:rgba(255,255,255,0.5);
             width: 100%;
             padding:0.5rem;
+
         }
     </style>
 
