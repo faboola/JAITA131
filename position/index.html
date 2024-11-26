@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        /* position:fixed serve a fissare un elemento rispetto al viewport. */
+        
+        .fixed {
+            background-color: #e45cff;
+            position: fixed;
+
+            /*servono delle coordinate top, bottom, right, left */
+            /* bottom:0;
+            right:0; */
+
+            bottom:3rem; /*conta 3rem dal fondo del viewport */
+            left:10rem; /*conta 10rem dal lato sinistro del viewport */
+        }
+
+        .relative {
+            position:relative;
+            border:1px solid red;
+            background:rgb(255, 232, 232);
+
+            height:500px;
+            width: 500px;;
+        }
+
+        .absolute {
+
+            /*position:absolute fissa l'elemento rispetto al genitore che ha position:relative */
+            position: absolute;
+            /*le coordinate funzionano in modo simile a position:fixed*/
+            bottom:1rem;
+            left:1rem;
+
+            border:1px solid blue;
+            background-color: rgb(200, 200, 255);
+        }
+
+    </style>
+
+    <div class="fixed">
+        I'M FIXED!
+    </div>
+
+
+    <div class="relative">
+
+
+        <div class="absolute">
+        I'M ABSOLUTE!
+        </div>
+
+
+    </div>
+    
+    <h1>Lorem, ipsum.</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio fugiat ipsum magni repellendus, sunt expedita voluptas nemo neque enim. Perspiciatis, aliquam tempore debitis nemo explicabo accusantium quam dicta repellat quasi voluptatibus, vel molestias quis maiores voluptatem soluta nulla natus quae maxime, similique doloremque sed repellendus consequatur. Porro, sed aut!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, enim cupiditate. Dolore, dicta voluptas? Dolore, labore sit? Provident labore quae doloremque perspiciatis molestias quas molestiae odit magnam aspernatur itaque amet voluptate pariatur, nam dolore totam ratione praesentium facere! Assumenda et illo voluptatem id expedita illum accusamus nemo autem aliquid laborum deserunt, ipsum, nostrum, ipsam voluptate perferendis sapiente hic esse magnam iusto quia veritatis? Fugit nemo asperiores magni nulla repellendus sapiente iure rem, dignissimos temporibus porro voluptas quam at officiis sit? Tempora tempore nesciunt eveniet culpa dolore ipsum asperiores neque atque? Earum voluptate, delectus sequi ratione natus aperiam cumque voluptas. Numquam.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam velit soluta ipsa atque! Nemo temporibus quidem accusamus voluptas? Quae maiores, expedita cupiditate dolor id pariatur possimus, blanditiis itaque, minus distinctio autem quam consequatur? Libero inventore debitis et aperiam asperiores voluptas ad repellendus magni, assumenda consectetur illum veritatis nam reprehenderit harum!</p>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aut, eius laborum nulla perferendis illum sunt maxime cum delectus exercitationem odio repellat impedit nihil sint reiciendis architecto esse optio? Voluptatibus, ab ad non quidem aperiam maxime voluptas rerum quasi officia odio aspernatur earum soluta illo voluptatem doloremque, dolore dignissimos est magni odit in quibusdam. Quae officiis harum quod praesentium deleniti est? Temporibus nostrum qui ipsum voluptas veritatis, blanditiis at quidem deserunt earum velit laborum illum mollitia obcaecati vel dolore cupiditate omnis ea! Corrupti commodi porro libero, odio quisquam nesciunt nihil aspernatur earum dignissimos fugit dolor atque ipsum! Sit, labore praesentium!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto iure tempora quis molestiae est dignissimos nulla hic sit veritatis voluptates, suscipit consequuntur? Dolorum libero animi debitis temporibus repudiandae fugit assumenda nulla repellat voluptatem adipisci, quia mollitia quasi veniam, magni molestiae nesciunt esse aspernatur minima officia?</p>
+
+
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt incidunt numquam totam ratione! Qui, iste odit totam hic debitis et sed obcaecati voluptatibus maiores at ad, rem doloribus excepturi.</p>
+
+    <style>
+        .gallery-image {
+            position: relative; /*diventa il punto di riferimento per il figlio che ha position:absolute */
+        }
+
+        .gallery-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background:rgba(255,255,255,0.5);
+            width: 100%;
+            padding:0.5rem;
+        }
+    </style>
+
+    <div class="gallery-image">
+        <img src="https://picsum.photos/600/400/?random=1" alt="">
+
+        <div class="gallery-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+    </div>
+
+</body>
+</html>
