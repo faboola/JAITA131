@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+    <section id="hero">
+        <h1>Media queries</h1>
+    </section>
+
+
+    <section id="info">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>More about our services</h2>
+            </div>
+
+            <!-- START INFO BOX -->
+            <div class="info-box">
+
+                <div class="info-image">
+                    <img src="https://picsum.photos/600/400?random=1" alt="">
+                </div>
+
+                <div class="info-text">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
+                        minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
+                        cumque rem dicta? Doloremque, dolorem.</p>
+                </div>
+            </div>
+            <!-- END INFO BOX -->
+
+            <!-- START INFO BOX -->
+            <div class="info-box">
+                <div class="info-image">
+                    <img src="https://picsum.photos/600/400?random=2" alt="">
+                </div>
+                <div class="info-text">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
+                        minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
+                        cumque rem dicta? Doloremque, dolorem.</p>
+                </div>
+            </div>
+            <!-- END INFO BOX -->
+        </div>  
+
+    </section>
+
+    <section id="gallery-section">
+        <div class="container">
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/miata" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/miata,black" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/miata" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,orange" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,nd" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,car" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,car" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,car" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,car" alt="">
+                </div>
+        
+                <div class="gallery-item">
+                    <img src="https://loremflickr.com/400/400/mx-5,car" alt="">
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Immagini responsive con PICTURE -->
+
+    <picture>
+
+        <!-- Creo i vari tag SOURCE in base al numero di immagini per le diverse media queries  -->
+        <source srcset="images/gattogin-h.webp" media="(min-width:992px)">
+        <source srcset="images/gattogin-q.webp" media="(min-width:768px)">
+
+        <!-- l'immagine base per schermi piccoli si indica con img -->
+        <img src="./images/gattogin-v.webp" alt="">
+
+        
+
+    </picture>
+
+
+</body>
+</html>

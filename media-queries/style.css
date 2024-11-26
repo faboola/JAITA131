@@ -1,0 +1,111 @@
+/* -------------------------------------------------------------------------- */
+/*                   REGOLE GENERICHE E PER SCHERMI PICCOLI                   */
+/* -------------------------------------------------------------------------- */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width:92%;
+    margin: 0 auto;
+}
+
+/*HERO*/
+
+#hero {
+    height:100vh;
+    background-image: url('images/gatto-vertical.webp');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /*centriamo il testo dentro hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap:wrap; /*vai a capo se esaurisci lo spazio*/
+}
+
+.gallery-item {
+    width: 50%;
+    padding:0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                SCHERMI MEDI                                */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:768px) {
+
+    #info img {
+        width: 100%;
+    }
+
+    .gallery-item {
+        width:33.33%;
+    }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               SCHERMI GRANDI                               */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:992px) {
+
+    #hero {
+        background-image: url('images/gatto-horizontal.webp');
+    }
+
+    .container {
+        width:82%;
+    }
+
+    /* SEZIONE INFO */
+
+    .info-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .info-image {
+        width: 33.33%;
+    }
+
+    .info-text {
+        width: 66.66%;
+        padding-left: 1rem;
+    }
+
+}
+
+/*SCHERMI XL */
+
+@media screen and (min-width:1200px) {
+
+
+    .gallery-item {
+        width:25%;
+    }
+
+}
