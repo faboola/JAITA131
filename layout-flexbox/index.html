@@ -15,7 +15,6 @@
 
         <header>
 
-
             <div class="container">
 
                 <!-- a questo elemento daremo display:flex per affiancare logo e menu -->
@@ -27,7 +26,7 @@
                     <!-- Il tag NAV nasce per contenere gli elementi di navigazione principale
                     (menu) -->
                     <nav class="main-menu">
-                        <ul>
+                        <ul> <!-- <- A questo dobbiamo dare display:flex -->
                             <li>
                                 <a href="">ABOUT</a>
                             </li>
@@ -59,38 +58,44 @@
             </section>
 
             <section id="info">
+                <div class="container">
+    
+    
+    
+                    <div class="section-title">
+                        <h2>More about our services</h2>
+                    </div>
+    
+                    <!-- START INFO BOX -->
+                    <div class="info-box">
 
-                <div class="section-title">
-                    <h2>More about our services</h2>
-                </div>
+                        <div class="info-image">
+                            <img src="https://picsum.photos/600/400?random=1" alt="">
+                        </div>
 
-                <!-- START INFO BOX -->
-                <div class="info-box">
-                    <div class="info-image">
-                        <img src="https://picsum.photos/600/400?random=1" alt="">
+                        <div class="info-text">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
+                                minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
+                                cumque rem dicta? Doloremque, dolorem.</p>
+                        </div>
                     </div>
-                    <div class="info-text">
-                        <h2>Lorem, ipsum dolor.</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
-                            minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
-                            cumque rem dicta? Doloremque, dolorem.</p>
+                    <!-- END INFO BOX -->
+    
+                    <!-- START INFO BOX -->
+                    <div class="info-box">
+                        <div class="info-image">
+                            <img src="https://picsum.photos/600/400?random=2" alt="">
+                        </div>
+                        <div class="info-text">
+                            <h2>Lorem, ipsum dolor.</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
+                                minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
+                                cumque rem dicta? Doloremque, dolorem.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- END INFO BOX -->
-
-                <!-- START INFO BOX -->
-                <div class="info-box">
-                    <div class="info-image">
-                        <img src="https://picsum.photos/600/400?random=2" alt="">
-                    </div>
-                    <div class="info-text">
-                        <h2>Lorem, ipsum dolor.</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima et fugiat
-                            minus similique ipsum aliquid, sapiente adipisci, consequuntur aut quis incidunt
-                            cumque rem dicta? Doloremque, dolorem.</p>
-                    </div>
-                </div>
-                <!-- END INFO BOX -->
+                    <!-- END INFO BOX -->
+                </div>  
 
             </section>
 

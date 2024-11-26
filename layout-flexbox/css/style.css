@@ -7,13 +7,102 @@
     margin:0 auto; /*centrato rispetto al genitore */
 }
 
+img {
+    max-width:100%;
+    /* tutte le immagini saranno grandi al massimo il 100% della loro dimensione 
+    intrinseca. Quindi un'immagine da 600px sarà grande al massimo 600px.
+
+    Poiché stiamo usando una misura in percentuale, otteniamo un'immagine fluida, che si ridimensiona nei contenitori più piccoli. */
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               SEZIONE HEADER                               */
+/* -------------------------------------------------------------------------- */
+
+
 header {
+   position: fixed;
+   left: 0; /*posiziona a 0px da sinistra*/
+   top: 0;  /*positiona a 0px da sopra */
+
+   /*position "scollega" l'elemento dal flusso del documento, quindi dobbiamo ridargli la larghezza 100% come se fosse un normale elemento blocco nel documento */
+
+   width:100%;
+
+   background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
    
-    background-color: aqua;
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between; /*distribuisce i due elementi figli agli opposti */
+
+    align-items:center; /*allineo logo e menu in verticale */
 }
 
+.main-menu ul {
+    display: flex;
+    /*elimino i puntini dalla lista*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*posso distanziare i figli di UL con GAP*/
+    gap: 1rem;
+
+    /*NOTA: gap mette gli spazi tra gli elementi, senza toccare il primo e l'ultimo */
+    /*in pratica aggiunge spazio solo negli spazi interni */
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                SEZIONE HERO                                */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+
+    /* imposto altezza al 100% del viewport */
+
+    height: 100vh;
+    
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /*corrisponde a:
+
+    background-position-x: center
+    background-position-y: center
+    */
+    
+    /*centro il testo sulla HERO*/
+    display: flex;
+    justify-content: center; /*orizzontale*/
+    align-items: center; /*verticale */
+
+    text-align: center;
+    
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                              SEZIONE INFO BOX                              */
+/* -------------------------------------------------------------------------- */
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+.info-image {
+    width:33.33%;
+}
+
+.info-text {
+    width: 66.66%;
+    padding-left: 1rem;
+}
