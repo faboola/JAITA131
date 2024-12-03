@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores odit architecto accusantium similique distinctio enim recusandae, saepe minima placeat, illo et aliquid, provident pariatur odio repellendus eum? Unde commodi assumenda voluptas praesentium provident, molestias placeat nobis nesciunt odit totam incidunt?</p>
+        <hr class="my-5">
+    </div>
+
+    <h2 class="text-center">Righe e colonne uguali</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">Colonna 1</div>
+            <div class="col">Colonna 2</div>
+            <div class="col">Colonna 3</div>
+        </div>
+    </div>
+    <hr class="my-5">
+    <h2 class="text-center">Righe e colonne di misura definita</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">Colonna da 4/12</div>
+            <div class="col-8">Colonna da 8/12</div>
+            <div class="col-4">Colonna da 4/12 (va a capo!)</div>
+        </div>
+    </div>
+    
+    <hr class="my-5">
+
+    <h2 class="text-center">Colonne Responsive</h2>
+
+    <div class="container">
+        <div class="row">
+            <!-- Se uso gli infix, definisco le larghezze a partire da quel breakpoint -->
+            <!-- Di default, sotto il primo breakpoint dichiarato le colonne sono 12/12 -->
+
+            <div class="col-md-6 col-lg-9">Colonna responsive</div>
+            <div class="col-md-6 col-lg-3">Colonna responsive</div>
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <!-- Con la prima classe .col-* definiamo la dimensione fino al primo breakpoint. Dopo di che usiamo il breakpoint per definire la dimensione della colonna da quel breakpoint in su. -->
+            <div class="col-6 col-lg-3">6/12 fino a LG | 3/12 su LG</div>
+            <div class="col-6 col-lg-9">6/12 fino a LG | 9/12 su LG</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

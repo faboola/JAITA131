@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+        <!-- La classe navbar-expand-lg determina il breakpoint da cui la navbar appare in orizzontale (espansa) -->
+        <!-- con la classe bg-* definisco il colore di sfondo -->
+        <nav class="navbar navbar-expand-lg bg-transparent">
+
+            <!-- Il default è container-fluid ma volendo possiamo cambiarlo in un container normale -->
+            <div class="container">
+              <!-- Posso anche inserire un'immagine dentro a.navbar-brand -->
+              <a class="navbar-brand" href="#">LOGO</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <!-- NOTA: se vuoi puoi cambiare l'icona con un SVG o una icon-font a tua scelta. L'importante è che stia dentro il button.navbar-toggler -->
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+
+              <!-- Questo è il blocco di menu che viene espanso/collassato -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- per spostare a destra la navbar sostituisco la classe me-auto (corrisponde a margin-right:auto) con la classe ms-auto (corrisponde a margin-left: auto) -->
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- da qui partono tutti i li.nav-item che sono le voci di menu -->
+                    <!-- Singola voce di menu: -->
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <!-- Fine voce di menu -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <!-- elemento dropdown: attenzione che c'è un a e sotto un altro UL che è il sottomenu! -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+
+
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+
+
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="main-content col-lg-9">
+                    <h1>Titolo articolo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam hic debitis cumque, eius, asperiores esse fuga, quia iste a nulla dolorem saepe! Vitae ipsum sunt dolor, dolorum magnam delectus? Magnam, dolorum reiciendis? Animi eius doloribus a, odit est consequuntur magnam ducimus ratione cum ab, impedit quasi dolorum mollitia ipsam voluptas.</p>
+
+                    <hr>
+
+                    <!-- Posso creare righe nidificate dentro le colonne! -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="https://picsum.photos/800/600?random=2" alt="">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad, dolor labore sit, ea quos esse quibusdam doloribus maxime dicta nulla. Iusto culpa et, illum ab exercitationem aliquid, ratione aliquam veniam quis, quidem voluptatibus aspernatur blanditiis?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora porro sequi fuga dolore, provident, sit aliquam quaerat temporibus, soluta praesentium veritatis. Dolores tempora illo cupiditate rerum possimus consequuntur quia. Iste delectus nemo blanditiis sequi? Eligendi suscipit facilis blanditiis dignissimos? Corrupti provident praesentium maxime minus consequatur incidunt nostrum animi voluptas assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar col-lg-3">
+                    <h2>Articoli correlati</h2>
+                    ...lista articoli...
+                </div>
+
+                <!-- NOTA: main-content e sidebar NON sono classi di Bootstrap -->
+            </div>
+        </div>
+    </main>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
