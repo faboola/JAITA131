@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Rosso commentato</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header id="main-header">
+
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <nav class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Servizi</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo</a>
+                        </li>
+                        <li>
+                            <a href="#">Contatti</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="menu-icon">
+                    <img src="images/list.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <!-- Container per centrare e staccare dal bordo -->
+            <div class="container">
+
+                <!-- wrapper per affiancare con display:flex (su Boostrap useremo .row) -->
+                <div class="hero-wrapper">
+
+                    <!-- All'interno inseriamo i div che dovremo affiancare con display:flex  -->
+                    <div class="hero-image">
+                        <img src="./images/hero.png" alt="">
+                    </div>
+
+                    <div class="hero-text">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis laudantium ipsum, in enim et reiciendis vero odio quibusdam eum.</p>
+
+                        <a href="#" class="button">Click me!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mario"> <!-- Blocco rosso --> 
+            <div class="container">
+                <div class="mario-wrapper"> <!-- elemento per display:flex -->
+
+                    <!-- INIZIO CARD CON ICONA -->
+                    <div class="card">
+                        <div class="card-image"><img src="./images/fungo.png" alt=""></div>
+                        <div class="card-text">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iste assumenda cum omnis fugiat esse unde, placeat delectus aspernatur, vitae facere corrupti!</p>
+                        </div>
+                    </div>
+                    <!-- FINE CARD -->
+
+                    <!-- INIZIO CARD CON ICONA -->
+                    <div class="card">
+                        <div class="card-image"><img src="./images/pianta.png" alt=""></div>
+                        <div class="card-text">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iste assumenda cum omnis fugiat esse unde, placeat delectus aspernatur, vitae facere corrupti!</p>
+                        </div>
+                    </div>
+                    <!-- FINE CARD -->
+
+                    <!-- INIZIO CARD CON ICONA -->
+                    <div class="card">
+                        <div class="card-image"><img src="./images/stella.png" alt=""></div>
+                        <div class="card-text">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iste assumenda cum omnis fugiat esse unde, placeat delectus aspernatur, vitae facere corrupti!</p>
+                        </div>
+                    </div>
+                    <!-- FINE CARD -->
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="follow">
+            <div class="container">
+                <div class="follow-wrapper">
+                    <div class="follow-image">
+                        <img src="./images/follow.png" alt="">
+                    </div>
+                    <div class="follow-text">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus debitis eum quae sequi soluta accusamus ea dicta animi fugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="main-footer">
+        <a href="#">COOKIE POLICY</a> | 
+        <a href="#">CONTATTI </a> | 
+        <a href="#">DISCLAIMER</a>
+    </footer>
+</body>
+</html>

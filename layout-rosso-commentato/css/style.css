@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*definisco una variabile di colore a livello globale */
+    --primary: #CD2525;
+    --secondary: #6a6a6a;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.container {
+    /*centrare e staccare dal bordo */
+    width:94%;
+    margin: 0 auto;
+}
+
+/* Forzo max-width a tutte le immagini per renderle fluide.
+NOTA: con max-width le immagini non si allargano oltre la loro dimensione in pixel, a differenza di ciò che farebbero usando width:100% */
+
+img {
+    
+    max-width:100%;
+}
+
+.button {
+    /*se volessi ridefinire la variabile con uno scope diverso, potrei farlo così: 
+    --primary:#00FF00;
+
+    e in questo caso il pulsante sarebbe verde */
+    
+    color:white;
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    /*sintassi per richiamare le variabili CSS */
+    background-color: var(--primary);
+
+
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    /*per nascondere gli elementi dal documento */
+    display: none;
+
+    /*display:none fa scomparire gli elementi, che non occuperanno più spazio sulla pagina.
+    Diverso invece visibility:hidden che nasconde gli elementi ma gli consente comunque di occupare spazio */
+}
+
+
+.menu-icon img {
+    width: 24px;
+}
+
+.logo img {
+    padding:0.5rem;
+    width:60px;
+}
+
+section#hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+section#mario {
+
+    background-color: var(--primary);
+
+    /* la proprietà COLOR è ereditaria: impostandola qui vale per tutti i figli */
+    /*il background-color invece NON è ereditario, ma l'effetto è simile perché impostando il background sulla section tutti i figli staranno su sfondo rosso. */
+    color:#ffffff; 
+
+    text-align: center;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.card-image {
+    padding:2rem;
+}
+
+footer#main-footer {
+    background:#666;
+    color: #ddd;
+    padding:1rem;
+    text-align: center;
+  
+}
+
+footer#main-footer a {
+    color:#ddd;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                       ESEMPIO STILI PER SCHERMI MEDI                       */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:768px) {
+
+    .card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+}
+/* Fine media query */
+
+
+/* -------------------------------------------------------------------------- */
+/*                          STILI PER SCHERMI GRANDI                          */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:992px) {
+
+    .container {
+        width:80%;
+        /*non serve margin:0 auto perché è ereditato dagli stili precedenti */
+       
+    }
+    
+    /*sparisce la menu-icon da desktop */
+    .menu-icon {
+        display: none;
+    }
+
+    /*mostriamo nuovamente il main-menu da desktop */
+    .main-menu {
+        display: block;
+    }
+
+    .main-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        gap: 1.5rem;
+
+    }
+
+    .main-menu a {
+        color:#666;
+        text-decoration: none;
+        text-transform: uppercase; /*rende tutto maiuscolo */
+        /*altre opzioni:
+        text-transform: capitalize (solo iniziali maiuscole)
+        text-transform: lowercase (tutto minuscolo).
+        */
+    }
+
+
+    /*SEZIONE HERO */
+
+    .hero-wrapper {
+        display: flex;
+        align-items:center;
+    }
+
+
+
+    /*SEZIONE MARIO */
+    .mario-wrapper {
+        display: flex;
+        gap: 2rem;
+        /*NOTA: se avessimo flex-wrap che manda a capo quando lo spazio occupato dai figli è superiore al 100%, GAP creerebbe un'abbondanza sulla riga, e manderebbe a capo l'ultimo elemento.
+
+        Questo perché il GAP si sommerebbe alla WIDTH, e quindi avremmo una situazione tipo:
+        33.33% + 2rem + 33.33% + 2rem + 33.33% = 99.99% + 4rem <| oltre 100! 
+        */
+    }
+
+    .card {
+        /*attenzione! Ora dalle regole per schermi medi ho ereditato la proprietà FLEX su Card. Devo modificarla per mostrare in colonna immagine o testo*/
+        /*posso disattivare tutto flexbox usando display:block oppure posso invertire gli assi di flexbox per far sviluppare su colonne anziché righe tutto il blocco */
+        
+        /* display: block; */
+        flex-direction: column;
+        width:33.33%;
+
+        /*dovremmo anche cambiare il text-align, perché ora stiamo ereditando il text-align: left dagli schermi medi. Quindi: */
+        text-align: center;
+
+        /*NOTA: text-align è ereditario quindi posso anche applicarlo al genitore .card e funzionerà anche sul figlio .card-text */
+    }
+
+
+    /*SEZIONE FOLLOW US */
+
+    .follow-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .follow-image {
+        order:1;
+    }
+
+    .follow-text {
+        text-align: right;
+    }
+
+    
+
+} /*fine media query 992px */
