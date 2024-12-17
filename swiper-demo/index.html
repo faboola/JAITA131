@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS DI BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- CSS DI SWIPER -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+
+<style>
+    .slide-text {
+        background:rgba(0,0,0,0.5);
+        color:white;
+    }
+</style>
+<div class="container">
+    
+        <h2>Swiper con slides singole</h2>
+
+        <div id="hero-slider" class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+        
+              <!-- NOTA: le slides possono contenere qualunque elemento html -->
+              <div class="swiper-slide">
+
+                  <img src="https://picsum.photos/1300/800/?random=22" class="img-fluid" alt="">
+                <div class="slide-text position-absolute bottom-0 start-0 w-100 p-3">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit reiciendis provident praesentium soluta in consequatur quasi est repellat sed ratione?</p>
+                </div>
+              
+              </div>
+
+              <div class="swiper-slide">
+                <img src="https://picsum.photos/1300/800/?random=23" class="img-fluid" alt="">
+              </div>
+           
+        
+              <div class="swiper-slide">
+                <img src="https://picsum.photos/1300/800/?random=24" class="img-fluid" alt="">
+              </div>
+           
+        
+        
+            </div>
+        
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        
+        
+        
+    </div>
+
+
+
+
+</div>
+
+
+
+    <div class="container">
+    <h2>Swiper con slides multiple:</h2>
+    
+        <!-- Slider main container -->
+         <!-- ATTENZIONE: devo inizializzare l'oggetto JS su questo elemento! -->
+    <div class="swiper" id="swiper-multi">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+    
+          <!-- NOTA: le slides possono contenere qualunque elemento html -->
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=1" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=2" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=3" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=4" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=5" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=6" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=7" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=8" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=9" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/800/600/?random=10" class="img-fluid" alt="">
+          </div>
+    
+    
+        </div>
+    
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    
+    
+    
+</div>
+
+    <!-- JS DI BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
+    <!-- JS di SWIPER: -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+
+    // INIZIALIZZO LO SWIPER CON SLIDES SINGOLE
+    var swiperHero = new Swiper("#hero-slider", { //inizializzo su ID del primo slider
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    //INIZIALIZZO LO SWIPER CON SLIDES MULTIPLE
+
+    var swiper = new Swiper("#swiper-multi", { //inizializzo su ID del secondo slider
+    /*prima le regole da 0px in su */
+      slidesPerView: 1,
+    //   spaceBetween: lo spazio tra le slides in px
+      spaceBetween: 10,
+
+      loop: true,
+
+      //inizializza la pagination, se serve
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+        // Inizializza la navigazione con le freccine
+        //Se usiamo .swiper-button-next e .swiper-button-prev le frecce avranno l'aspetto di default definito dal css di Swiper. Se invece usiamo elementi custom, dobbiamo definirli da CSS.
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+      breakpoints: {
+       
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+
+</body>
+</html>
