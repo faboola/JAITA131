@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------------------- */
+/*                                 STILI FONT                                 */
+/* -------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Reddit Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', serif;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+
+
+    background-image: url('img/hero.jpg');
+
+    /* The holy trinity of background images */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*nota: viene ereditata anche da desktop!*/
+
+    height: 60vh;
+
+    color: #efefef;
+
+
+
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 STILI LARGE                                */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:992px) {
+
+    #hero {
+        /*se abbiamo la navbar normale e non fixed-top*/
+        height: calc(100vh - 67px);
+        
+       
+    }
+
+}

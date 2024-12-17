@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
 
 <header id="main-header">
-    <!-- Navbar con off-canvas: https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas -->
    
+    <!-- Navbar con off-canvas: https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas -->
 
     <!-- NOTA: aggiungo la classe navbar-expand-lg per espandere la nav su schermi grandi -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-<!-- 
-        NOTA: ho sostituito container-fluid con un .container per stringere la navbar -->
+    <nav class="navbar navbar-expand-lg">
+        
+    <!-- NOTA: ho sostituito container-fluid con un .container per stringere la navbar -->
         <div class="container">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Main Road" style="width:150px">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -49,10 +57,7 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+             
             </div>
           </div>
         </div>
@@ -60,8 +65,8 @@
 
 </header>
 
-<section id="hero">
-    <div class="hero-content">
+<section id="hero" class="d-flex align-items-center justify-content-center mb-5">
+    <div class="hero-content text-center">
         <h1>On The Road</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <a href="#" class="btn btn-primary">Buy now!</a>
