@@ -8,8 +8,16 @@ body {
 
 h1, h2 {
     font-family: 'Pacifico', serif;
+    color: #4A0000;
 }
 
+.section-title {
+    margin-top: 4rem;
+}
+
+.section-title h2 {
+    border-bottom: 2px dotted #666;
+}
 
 
 /* -------------------------------------------------------------------------- */
@@ -32,9 +40,49 @@ h1, h2 {
     color: #efefef;
 
 
-
 }
 
+#hero h1 {
+    color: #efefef;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                IMAGE SPACER                                */
+/* -------------------------------------------------------------------------- */
+
+#image-spacer {
+    background-image: url('./img/la_webp.webp');
+
+      /* The holy trinity of background images */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      /*nota: viene ereditata anche da desktop!*/
+
+      background-attachment: fixed; /*nessuno scroll sull'immagine*/
+      height:400px;
+
+      margin: 5rem auto;
+}
+
+/* Background-attachment: fixed ha problemi su Safari. Per ovviare possiamo usare questo hack: */
+
+@supports (-webkit-touch-callout: none) {
+    #image-spacer {
+      background-attachment: scroll; /* Disabilita fixed solo su Safari */
+    }
+  }
+
+
+textarea {
+    height:200px;
+}
+
+
+#main-footer {
+background: #7571bb;
+color:#efefef;
+}
 
 
 /* -------------------------------------------------------------------------- */
@@ -50,4 +98,7 @@ h1, h2 {
        
     }
 
+    textarea {
+        height: auto;
+    }
 }

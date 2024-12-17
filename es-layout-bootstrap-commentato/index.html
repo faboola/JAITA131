@@ -116,55 +116,120 @@
 
 <section id="offerte">
     <div class="container">
-        <div class="section-title">
+        <div class="section-title py-5 mt-5">
             <h2>Ultime offerte</h2>
         </div>
-        <div class="row">
+        <div class="row gx-5">
             <div class="col-lg-4">
-                CARD
+                <!-- inizio card -->
+                <div class="card">
+                    <img src="./img/card1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <!-- fine card -->
             </div>
             <div class="col-lg-4">
-                CARD
+                   <!-- inizio card -->
+                   <div class="card">
+                    <img src="./img/card2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <!-- fine card -->
             </div>
             <div class="col-lg-4">
-                CARD
+                   <!-- inizio card -->
+                   <div class="card">
+                    <img src="./img/card3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <!-- fine card -->
             </div>
         </div>
     </div>
 </section>
 
-<section id="contatti">
+<section id="contatti" class="mb-5">
     <div class="container">
         <div class="section-title">
             <h2>Contattaci</h2>
         </div>
 
-        <div class="row">
-            <div class="col-lg-6">NOME | COGNOME | MAIL | TEL</div>
-            <div class="col-lg-6">MESSAGGIO</div>
+        <form action="">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="form-element">
+                        <!-- NOTA: il "for" della label fa riferimento al ID dell'input. -->
+                        <label class="form-label" for="nome">Nome e cognome</label>
+                        <input class="form-control" type="text" name="nome" id="nome">
+                    </div>
+
+                    <div class="form-element">
+                        <label class="form-label" for="email">E-mail</label>
+                        <input class="form-control" type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-element">
+                        <label class="form-label" for="telefono">Telefono</label>
+                        <input class="form-control" type="tel" name="telefono" id="telefono">
+                    </div>
+                </div>
 
 
-        </div>
+                <div class="col-lg-6">
 
-        <div class="row">
-            <div class="col-6">CHECKBOX</div>
-            <div class="col-6">
-            <!-- Block buttons. Vedi: https://getbootstrap.com/docs/5.3/components/buttons/#block-buttons -->
-                <div class="d-grid d-lg-block">
-                    <button class="btn btn-primary">Invia</button>
+                    <!-- Come faccio a rendere la textarea alta come il resto del form?
+
+                    1. Sfrutto flexbox, e forzo la direzione flex-column. In questo modo il sistema flex si sviluppa in VERTICALE anziché in orizzontale.
+                    2. Imposto flex-grow in modo da far ingrandire l'elemento textarea fino a occupare tutto lo spazio disponibile. 
+
+                    NOTA: flex-grow funziona sul main-axis, che normalmente è in orizzontale. Qui però invertiamo gli assi quindi possiamo usare flex-grow in vericale.  -->
+
+                    <div class="form-element h-100 d-flex flex-column">
+                        <label class="form-label" for="messaggio">Il tuo messaggio</label>
+                        <textarea
+                        style="resize:none;"
+                        class="form-control flex-grow-1" name="messaggio" id="messaggio"></textarea>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- fine prima row form -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <input class="form-check-input" type="checkbox" value="" id="privacy">
+                    <label class="form-check-label" for="privacy">
+                      Ho letto e accettato la privacy policy
+                    </label>
+                </div>
+                <div class="col-lg-6">
+                <!-- Block buttons. Vedi: https://getbootstrap.com/docs/5.3/components/buttons/#block-buttons -->
+                    <div class="d-grid d-lg-block">
+                        <button class="btn btn-primary">Invia</button>
+                    </div>
+                </div>
+            </div>
+        </form>
 
     </div>
 </section>
 
-<footer id="main-footer">
+<footer id="main-footer" class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">Info azienda | Cookies | Etc.</div>
-            <div class="col-lg-4">IG | FB | YT</div>
-            <div class="col-lg-4">&copy; 2024 Jaita 131</div>
+            <div class="col-lg-4 text-center text-lg-start">Info azienda | Cookies | Etc.</div>
+            <div class="col-lg-4 text-center">IG | FB | YT</div>
+            <div class="col-lg-4 text-center text-lg-end">&copy; 2024 Jaita 131</div>
         </div>
     </div>
 </footer>
